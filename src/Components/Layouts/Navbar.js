@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
 export default function Navbar() {
     return (
@@ -13,6 +14,7 @@ export default function Navbar() {
                 <li><StyledLink to='/blogs'>iBlogs</StyledLink></li>
                 <li><StyledLink to="/inspiration">inspiration</StyledLink></li>
                 <li><StyledLink to='/contact'>iContact</StyledLink></li>
+                <li><StyledLink to='/Basket'> <ShoppingBasketIcon /></StyledLink></li>
             </NavbarLinks>
         </Nav>
     )
@@ -32,10 +34,7 @@ const Nav = styled.div`
 
 const NavbarLinks = styled.nav`
     list-style: none;
-    display: flex;
-    
-    
-    
+    display: flex;    
     li{
         margin: 30px 20px;
         color: black;

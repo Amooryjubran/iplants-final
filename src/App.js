@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Switch>
-        <Route path="/" components={Home}/>
-      </Switch>
+        <Switch>
+          <Route path="/" components={Home}/>
+        </Switch>
     </>
   );
 }

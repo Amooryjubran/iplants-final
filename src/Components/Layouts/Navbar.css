@@ -1,0 +1,29 @@
+@media screen and (min-width: 664px) {
+  nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .arrow {
+    display: none;
+  }
+  .Navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+  .newLinks {
+  }
+  .links {
+    background-color: white !important;
+    display: flex !important;
+  }
+}
+
+.newLinks {
+  display: block !important;
+}
+
+.links {
+  display: none;
+}

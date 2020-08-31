@@ -4,7 +4,7 @@ import logo from "../Assests/home-logo.png";
 
 function Header() {
   return (
-    <Home>
+    <Home className="home____">
       <div className="home__inner">
         <div className="home__left">
           <img src={logo} alt="" />
@@ -27,22 +27,23 @@ export default Header;
 
 const Home = styled.div`
   background-image: url("https://images.pexels.com/photos/1903973/pexels-photo-1903973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  /* width: fit-content; */
-  width: 200vh;
-  height: 106vh;
+  max-width: 100%;
   margin-top: -100px;
+  height: 100vh;
+
   .home__inner {
+    height: 100%;
     display: flex;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
   }
   .home__inner img {
-    height: 200px;
+    height: 300px;
   }
   .home__right {
     text-align: center;
     width: 400px;
     word-wrap: break-word;
+    background-color: rgba(211, 211, 211, 0.504);
   }
 `;

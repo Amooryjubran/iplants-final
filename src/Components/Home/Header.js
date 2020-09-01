@@ -4,27 +4,29 @@ import logo from "../Assests/home-logo.png";
 
 function Header() {
   return (
-    <Home className="home____">
-      <div className="home__inner">
-        <div className="home__left">
-          <img src={logo} alt="" />
-        </div>
-        <div className="home__right">
-          <h1>
-            <span>iPlants</span>
-          </h1>
+    <div>
+      <Home className="home____">
+        <div className="home__inner">
+          <div className="home__left">
+            <img src={logo} alt="" />
+          </div>
+          <div className="home__right">
+            <h1>
+              <span>iPlants</span>
+            </h1>
 
-          <h2>
-            <span className="span__topic">
-              There's a reason iPlants fills every home on Montreal with plants:
-              They add life to any room, purify your air, and boost your mood.
-              Updating your house with greenery is also easier than ever thanks
-              to new online plant delivery services.
-            </span>
-          </h2>
+            <h2>
+              <span className="span__topic">
+                There's a reason iPlants fills every home on Montreal with
+                plants: They add life to any room, purify your air, and boost
+                your mood. Updating your house with greenery is also easier than
+                ever thanks to new online plant delivery services.
+              </span>
+            </h2>
+          </div>
         </div>
-      </div>
-    </Home>
+      </Home>
+    </div>
   );
 }
 
@@ -41,6 +43,38 @@ const Home = styled.div`
   margin-top: -100px;
   height: 100vh;
 
+  @media (min-width: 768px) {
+    .home__right h1,
+    h2 {
+      width: 500px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    .home__inner {
+      display: grid !important;
+    }
+    .home__right h1,
+    h2 {
+      width: 320px;
+    }
+    .home__left img {
+      width: 200px;
+      height: 150px;
+      left: 20%;
+      position: absolute;
+      top: 20%;
+    }
+    .home__right {
+      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 5%;
+    }
+    .home__right span h2 {
+    }
+  }
   .home__inner {
     height: 100%;
     display: flex;
@@ -70,7 +104,6 @@ const Home = styled.div`
   }
   .home__right h1,
   h2 {
-    width: 500px;
     word-wrap: break-word;
     line-height: 30px;
   }

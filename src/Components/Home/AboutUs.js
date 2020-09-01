@@ -38,12 +38,16 @@ const About = styled.div`
 
   hr {
     width: 180px;
+    opacity: 0.5;
   }
   img {
     border-radius: 50%;
     margin-top: 30px;
   }
   p {
-    margin-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 35px;
+    max-width: 1300px;
   }
 `;
